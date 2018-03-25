@@ -1,0 +1,27 @@
+@import "grids";
+
+.content {
+  padding-top: 30px;
+  @media(max-width: $screen-sm){
+    padding-top: 20px;
+  }
+
+  &__container {
+    @include container-fixed;
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-large-desktop;
+    }
+    @media(max-width: $screen-sm){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
