@@ -1,4 +1,6 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "sidr.dark";
 
 @import "mixins";
 @import "grids";
@@ -11,6 +13,7 @@
 @import "button";
 @import "select";
 @import "form-elements";
+@import "rating";
 
 @import "header";
 @import "footer";

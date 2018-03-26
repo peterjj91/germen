@@ -1,0 +1,59 @@
+// Method 1) Pure CSS
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 31px;
+  width: 137px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+
+  &-top {
+    color: #FFDE02;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &-bottom {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 0;
+  }
+
+  &__star {
+    float: left;
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Method 2) Using a Sprite
+.star-ratings-sprite {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  margin: 0 auto;
+
+  &-rating {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    background-position: 0 100%;
+    float: left;
+    height: 21px;
+    display:block;
+  }
+
+}

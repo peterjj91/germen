@@ -1,9 +1,6 @@
-@import "grids";
-
 .content {
-  padding-top: 30px;
   @media(max-width: $screen-sm){
-    padding-top: 20px;
+
   }
 
   &__container {
@@ -19,8 +16,8 @@
       width: $container-large-desktop;
     }
     @media(max-width: $screen-sm){
-      padding-left: 10px;
-      padding-right: 10px;
+      //padding-left: 10px;
+      //padding-right: 10px;
     }
   }
 }
