@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "sidr": "^2.2.1"
+    "sidr": "^2.2.1",
+    "slideout.js": "^1.0.1"
   }
 }

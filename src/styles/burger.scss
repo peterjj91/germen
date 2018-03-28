@@ -37,14 +37,14 @@
 
   span {
     background-color: rgba(34, 34, 60, 0.68);
-    height: 3px;
+    height: 4px;
     display: block;
     width: 26px;
     margin: 11px auto 0;
     border-right: 1px;
 
     @media(max-width: $screen-sm){
-      margin: 10px auto 0;
+      margin: 9px auto 0;
       width: 26px;
     }
 
@@ -52,7 +52,7 @@
       content: "";
       position: absolute;
       width: 26px;
-      height: 3px;
+      height: 4px;
       top: inherit;
       left: 0;
       margin: auto;
@@ -90,6 +90,16 @@
       &:before, &:after {
         margin-top: 0;
         //box-shadow: 0 0 0 1px white;
+      }
+    }
+  }
+
+  &--white {
+    span {
+      background-color: white;
+
+      &:before, &:after {
+        background-color: white;
       }
     }
   }

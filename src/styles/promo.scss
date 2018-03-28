@@ -3,9 +3,11 @@
   position: relative;
   padding: 126px 0px 33px 0px;
   text-align: center;
+  margin-bottom: 115px;
   @media (max-width: $screen-sm) {
-    padding-top: 113px;
-    height: 835px;
+    padding-top: 90px;
+    height: 812px;
+    margin-bottom: 0;
   }
 
   &__img {
@@ -32,13 +34,16 @@
   }
 
   &__icons {
-    display: none;
     position: absolute;
-    bottom: 40px;
+    bottom: 49px;
     left: 0;
     width: 100%;
     @media (max-width: $screen-sm) {
-      display: none;
+      bottom: 41px;
+    }
+
+    .content__container {
+      padding: 0;
     }
   }
 }
@@ -46,84 +51,75 @@
 .promo-properties {
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
   width: 100%;
   padding: 66px 0px 66px 0px;
 
   &__block {
-    @include make-xs-column(6);
-    padding: 0 !important;
+    @include make-xs-column(8);
+    @include make-md-column(6);
+    float: none !important;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0px 1px !important;
     text-align: center;
   }
 
   &__img {
-    height: 63px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+    @media (max-width: $screen-sm) {
+      height: 50px;
+      display: table;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 13px;
+    }
+
+    &__wrapper {
+      @media (max-width: $screen-sm) {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
   }
 
   &__icon {
     &--flowers {
-      width: 57px;
-      height: 63px;
+      width: 58px;
+      height: 64px;
+      @media (max-width: $screen-sm) {
+        height: 50px;
+      }
     }
 
     &--car {
-      width: 82px;
-      height: 53px;
+      width: 85px;
+      height: 69px;
+      @media (max-width: $screen-sm) {
+        height: 42px;
+      }
     }
 
     &--award {
       width: 48px;
-      height: 64px;
+      height: 71px;
+      @media (max-width: $screen-sm) {
+        height: 50px;
+      }
     }
   }
 
   &__text {
     font-size: 20px;
-  }
-
-  &--main {
-    margin-bottom: 34px;
-
+    line-height: normal;
     @media (max-width: $screen-sm) {
-      display: none;
+      font-size: 17px;
+      line-height: 19px;
     }
   }
 
   &--promo {
     padding: 0px 0px;
-
-    .promo-properties {
-      &__block {
-        @include make-xs-column(8);
-        padding: 0px 5px !important;
-      }
-
-      &__img {
-        height: 47px;
-      }
-
-      &__icon {
-        &--flowers {
-          width: 49px;
-          height: 47px;
-        }
-
-        &--car {
-          width: 65px;
-          height: 44px;
-        }
-
-        &--award {
-          width: 39px;
-          height: 50px;
-        }
-      }
-
-      &__text {
-        font-size: 16px;
-        line-height: normal;
-      }
-    }
   }
 }
 
@@ -185,7 +181,7 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -241,13 +237,19 @@
     height: 36px;
     overflow: hidden;
     @media (max-width: $screen-sm) {
-      padding-left: 8px;
-      padding-right: 8px;
+      display: table;
+      width: 100%;
+      padding: 8px 8px 6px 8px;
     }
 
     &__text {
       float: left;
       color: #000;
+      @media (max-width: $screen-sm) {
+        display: table-cell;
+        vertical-align: top;
+        float: none;
+      }
 
       &:hover, &:focus {
         color: white;
@@ -261,6 +263,12 @@
       font-family: $museosans-regular;
       font-size: 13px;
       color: #000;
+      @media (max-width: $screen-sm) {
+        display: table-cell;
+        text-align: right;
+        vertical-align: top;
+        float: none;
+      }
 
       &__text {
         display: inline-block;
@@ -290,8 +298,11 @@
   }
 
   &--main {
-    margin-top: 59px;
+    margin-top: 111px;
     padding-bottom: 56px;
+    @media (max-width: $screen-sm) {
+      margin-top: 66px;
+    }
   }
 }
 
@@ -461,7 +472,7 @@
   }
 
   &--main {
-    padding: 116px 0px 50px 0px;
+    padding: 110px 0px 50px 0px;
     @media (max-width: $screen-sm) {
       padding-top: 86px;
       padding-bottom: 18px;
@@ -470,14 +481,17 @@
 }
 
 .promo-about {
-  margin-bottom: 75px;
+  margin-bottom: 94px;
   @media (max-width: $screen-sm) {
     margin-bottom: 69px;
   }
 
   &__title {
     text-align: center;
-
+    margin-bottom: 30px;
+    @media (max-width: $screen-sm) {
+      margin-bottom: 10px;
+    }
   }
 
   &__nav {
@@ -490,6 +504,7 @@
       display: inline-block;
       vertical-align: middle;
       margin: 0px 2px;
+      margin-bottom: 10px;
     }
 
     &__img {
@@ -550,6 +565,75 @@
       @media (max-width: $screen-xs) {
         width: 57px;
         height: 55px;
+      }
+    }
+  }
+}
+
+.promo-menu {
+  text-align: left;
+  padding: 23px 25px 25px 35px;
+
+  &__burger {
+    //margin-bottom: 41px;
+    margin-bottom: 6vh;
+  }
+
+  &__nav {
+    padding: 0;
+    list-style: none;
+    font-size: 21px;
+    //margin-bottom: 50px;
+    margin-bottom: 7.7vh;
+
+    li {
+      width: 100%;
+      //margin-bottom: 22px;
+      margin-bottom: 3.3vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: black;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20vh;
+
+    li {
+      width: 100%;
+      //margin-bottom: 19px;
+      margin-bottom: 2.8vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: black;
+    }
+  }
+  
+  &__post {
+    //position: absolute;
+    //left: 0px;
+    //bottom: 51px;
+    //width: 100%;
+    //padding: 0px 33px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

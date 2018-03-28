@@ -6,7 +6,7 @@
   width: 100%;
   padding: 30px 0px 30px 0px;
   @media (max-width: $screen-md-min) {
-    padding-top: 50px;
+    padding-top: 26px;
   }
 
   &__container {
@@ -34,12 +34,15 @@
   &__phone {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 27px;
     left: 30px;
     fill: #5C5C6D;
 
     @media (max-width: $screen-md) {
       display: block;
+    }
+    @media(max-width: $screen-sm){
+
     }
   }
 
@@ -57,7 +60,7 @@
   &__burger {
     display: none;
     position: absolute;
-    top: 52px;
+    top: 29px;
     right: 30px;
 
     @media (max-width: $screen-md) {

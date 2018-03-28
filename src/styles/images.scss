@@ -7,6 +7,9 @@
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  @media(max-width: $screen-sm){
+    width: 88px;
+  }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
     width: 90px;

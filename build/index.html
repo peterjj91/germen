@@ -11,35 +11,66 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<div class="header">
-    <div class="header__container">
-        <div class="header__logo">
-            <a href="#" class="logo"></a>
-        </div>
+<nav id="menu-body" class="promo-menu">
+    <style>
+        .promo-menu {
+            display: none;
+        }
+    </style>
+    <div class="promo-menu__burger">
+        <span class="toggle-menu mobile-menu mobile-menu--white active"><span></span></span>
+    </div>
 
-        <a href="#" class="header__phone">
-            <svg class="" width="26px" height="26px">
-                <use xlink:href="icons/icons.svg#phone"></use>
-            </svg>
-        </a>
+    <ul class="promo-menu__nav">
+        <li><a href="#">Букеты</a></li>
+        <li><a href="#">Экспресс-доставка</a></li>
+        <li><a href="#">Подписка</a></li>
+        <li><a href="#">Доставка</a></li>
+    </ul>
 
-        <div class="header__content">
-            <div class="header__nav" id="header-nav">
-                <ul class="nav">
-                    <li><a href="#">Букеты</a></li>
-                    <li><a href="#">Экспресс-доставка</a></li>
-                    <li><a href="#">Подписка</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="tel:+74953755565"> +7 (495) 375-55-65</a></li>
-                </ul>
+    <ul class="promo-menu__info">
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Обработка персональных данных</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <div class="promo-menu__post">
+        <p>©2018 Germen. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
+    </div>
+</nav>
+
+<main id="panel-body">
+    <div class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#" class="logo"></a>
+            </div>
+
+            <a href="#" class="header__phone">
+                <svg class="" width="26px" height="26px">
+                    <use xlink:href="icons/icons.svg#phone"></use>
+                </svg>
+            </a>
+
+            <div class="header__content">
+                <div class="header__nav" id="header-nav">
+                    <ul class="nav">
+                        <li><a href="#">Букеты</a></li>
+                        <li><a href="#">Экспресс-доставка</a></li>
+                        <li><a href="#">Подписка</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="tel:+74953755565"> +7 (495) 375-55-65</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__burger">
+                <!--<a href="#right-menu" id="right-menu" class="mobile-menu"><span></span></a>-->
+                <span class="toggle-menu mobile-menu"><span></span></span>
             </div>
         </div>
-
-        <div class="header__burger">
-            <a href="#right-menu" id="right-menu" class="mobile-menu"><span></span></a>
-        </div>
     </div>
-</div>
 
 <div class="content">
     <div class="promo-main">
@@ -50,83 +81,61 @@
         </div>
 
         <div class="promo-main__icons">
-            <div class="promo-properties promo-properties--promo">
-                <div class="promo-properties__block">
-                    <div class="promo-properties__img">
-                        <svg class="promo-properties__icon promo-properties__icon--flowers">
-                            <use xlink:href="icons/icons.svg#properties-flowers"></use>
-                        </svg>
+            <div class="content__container">
+                <div class="promo-properties promo-properties--promo">
+                    <div class="promo-properties__block">
+                        <div class="promo-properties__img">
+                            <div class="promo-properties__img__wrapper">
+                                <svg class="promo-properties__icon promo-properties__icon--flowers">
+                                    <use xlink:href="icons/icons.svg#properties-flowers"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="promo-properties__text">Только свежие цветы</p>
                     </div>
 
-                    <p class="promo-properties__text">Только свежие цветы</p>
-                </div>
+                    <div class="promo-properties__block">
+                        <div class="promo-properties__img">
+                            <div class="promo-properties__img__wrapper">
+                                <svg class="promo-properties__icon promo-properties__icon--car" style="fill: transparent;stroke: black;">
+                                    <use xlink:href="icons/icons.svg#properties-car"></use>
+                                </svg>
+                            </div>
+                        </div>
 
-                <div class="promo-properties__block">
-                    <div class="promo-properties__img">
-                        <svg class="promo-properties__icon promo-properties__icon--car" style="fill: transparent;stroke: black;">
-                            <use xlink:href="icons/icons.svg#properties-car"></use>
-                        </svg>
+                        <p class="promo-properties__text">Самая быстрая доставка</p>
                     </div>
 
-                    <p class="promo-properties__text">Самая быстрая доставка</p>
-                </div>
+                    <div class="promo-properties__block">
+                        <div class="promo-properties__img">
+                            <div class="promo-properties__img__wrapper">
+                                <svg class="promo-properties__icon promo-properties__icon--award">
+                                    <use xlink:href="icons/icons.svg#properties-award"></use>
+                                </svg>
+                            </div>
+                        </div>
 
-                <div class="promo-properties__block">
-                    <div class="promo-properties__img">
-                        <svg class="promo-properties__icon promo-properties__icon--award">
-                            <use xlink:href="icons/icons.svg#properties-award"></use>
-                        </svg>
+                        <p class="promo-properties__text">Контроль качества</p>
                     </div>
 
-                    <p class="promo-properties__text">Контроль качества</p>
+                    <div class="promo-properties__block hidden-sm hidden-xs">
+                        <div class="promo-properties__img">
+                            <div class="promo-properties__img__wrapper">
+                                <svg class="promo-properties__icon promo-properties__icon--flowers">
+                                    <use xlink:href="icons/icons.svg#properties-flowers"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="promo-properties__text">Только свежие цветы</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="content__container">
-        <div class="promo-properties promo-properties--main">
-            <div class="promo-properties__block">
-                <div class="promo-properties__img">
-                    <svg class="promo-properties__icon promo-properties__icon--flowers">
-                        <use xlink:href="icons/icons.svg#properties-flowers"></use>
-                    </svg>
-                </div>
-
-                <p class="promo-properties__text">Только свежие цветы</p>
-            </div>
-
-            <div class="promo-properties__block">
-                <div class="promo-properties__img">
-                    <svg class="promo-properties__icon promo-properties__icon--car" style="fill: white;stroke: black;">
-                        <use xlink:href="icons/icons.svg#properties-car"></use>
-                    </svg>
-                </div>
-
-                <p class="promo-properties__text">Самая быстрая доставка</p>
-            </div>
-
-            <div class="promo-properties__block">
-                <div class="promo-properties__img">
-                    <svg class="promo-properties__icon promo-properties__icon--award">
-                        <use xlink:href="icons/icons.svg#properties-award"></use>
-                    </svg>
-                </div>
-
-                <p class="promo-properties__text">Контроль качества</p>
-            </div>
-
-            <div class="promo-properties__block">
-                <div class="promo-properties__img">
-                    <svg class="promo-properties__icon promo-properties__icon--flowers">
-                        <use xlink:href="icons/icons.svg#properties-flowers"></use>
-                    </svg>
-                </div>
-
-                <p class="promo-properties__text">Только свежие цветы</p>
-            </div>
-        </div>
-
         <div class="promo-catalog__wrapper">
             <div class="promo-catalog promo-catalog--main">
                 <div class="head-h2 promo-catalog__title">Самое популярное</div>
@@ -692,49 +701,50 @@
     </div>
 </div>
 
-<div class="footer">
-    <div class="footer__container">
-        <div class="promo-about">
-            <div class="head-h2 promo-about__title">О нас пишут</div>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="promo-about">
+                <div class="head-h2 promo-about__title">О нас пишут</div>
 
-            <ul class="promo-about__nav">
-                <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
-                <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
-            </ul>
-        </div>
+                <ul class="promo-about__nav">
+                    <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
+                    <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
+                    <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
+                    <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
+                    <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
+                    <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
+                </ul>
+            </div>
 
-        <div class="promo-message">
-            <div class="head-h2 promo-message__title">Можно сделать заказ через любой мессенджер</div>
+            <div class="promo-message">
+                <div class="head-h2 promo-message__title">Можно сделать заказ через любой мессенджер</div>
 
-            <ul class="promo-message__nav">
-                <li>
-                    <a href="#">
-                        <svg class="promo-message__icon promo-message__icon--telegram">
-                            <use xlink:href="icons/icons.svg#social-telegram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg class="promo-message__icon promo-message__icon--wtsp">
-                            <use xlink:href="icons/icons.svg#social-wtsp"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg class="promo-message__icon promo-message__icon--fb">
-                            <use xlink:href="icons/icons.svg#social-fb"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                <ul class="promo-message__nav">
+                    <li>
+                        <a href="#">
+                            <svg class="promo-message__icon promo-message__icon--telegram">
+                                <use xlink:href="icons/icons.svg#social-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="promo-message__icon promo-message__icon--wtsp">
+                                <use xlink:href="icons/icons.svg#social-wtsp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="promo-message__icon promo-message__icon--fb">
+                                <use xlink:href="icons/icons.svg#social-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+</main>
 </body>
 </html>
