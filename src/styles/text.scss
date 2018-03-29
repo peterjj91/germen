@@ -19,6 +19,20 @@
   }
 }
 
+.head-h3 {
+  font-size: 21px;
+  font-family: $museosans-bold;
+  @media (max-width: $screen-sm) {
+    font-size: 13px;
+  }
+}
+
 strong {
   font-family: $museosans-bold;
+}
+
+.text {
+  &--light {
+    opacity: 0.27;
+  }
 }

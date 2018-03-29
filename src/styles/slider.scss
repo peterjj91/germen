@@ -174,4 +174,24 @@
       }
     }
   }
+
+  &--simple {
+    height: auto;
+
+    .promo-product {
+      &__img {
+        img {
+          position: relative;
+          transform: none;
+          top: auto;
+          left: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    .slick-list {
+      height: auto;
+    }
+  }
 }

@@ -1,0 +1,142 @@
+input, textarea {
+  outline: none;
+}
+
+.textarea {
+  border-radius: 4px;
+  border: 1px solid rgba(151, 151, 151, 0.41);
+  color: grey;
+  padding: 9px 15px 9px 14px;
+  font-size: 17px;
+  resize: none;
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid rgba(151, 151, 151, 0.41);
+  color: grey;
+  padding: 9px 15px 9px 14px;
+  font-size: 17px;
+
+  &::-webkit-input-placeholder {
+    color: rgba(151, 151, 151, 0.27);
+  }
+  &::-moz-placeholder {
+    color: rgba(151, 151, 151, 0.27);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(151, 151, 151, 0.27);
+  }
+  &:-moz-placeholder {
+    color: rgba(151, 151, 151, 0.27);
+  }
+
+  &--mark {
+    padding-right: 30px;
+    background: url(../img/mark.png);
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+  }
+
+  &--mark-error {
+    padding-right: 30px;
+    background: url(../img/mark-red.png);
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  &__block {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    @media(max-width: $screen-sm){
+      width: 100%;
+    }
+
+    & + .styled-checkbox__block {
+      margin-left: 30px;
+      @media(max-width: $screen-sm){
+        margin-left: 0;
+      }
+    }
+  }
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid rgba(151, 151, 151, 0.41);
+  }
+
+  // Box hover
+  &:hover + label:before {
+    //background: #f35429;
+  }
+
+  // Box focus
+  &:focus + label:before {
+
+  }
+
+  // Box checked
+  &:checked + label:before {
+    //background: #f35429;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: rgba(151, 151, 151, 0.41);
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 rgba(151, 151, 151, 0.41),
+            4px 0 0 rgba(151, 151, 151, 0.41),
+            4px -2px 0 rgba(151, 151, 151, 0.41),
+            4px -4px 0 rgba(151, 151, 151, 0.41),
+            4px -6px 0 rgba(151, 151, 151, 0.41),
+            4px -8px 0 rgba(151, 151, 151, 0.41);
+    transform: rotate(45deg);
+  }
+}
+
+.promo-tooltip {
+  &--question {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 5px;
+  }
+}

@@ -1,3 +1,7 @@
+$(function () {
+    $('.selectpicker').selectpicker();
+});
+
 $(document).ready(function() {
     $('.btn__loading').click(function () {
         $(this).toggleClass('btn__loading--active')
@@ -75,4 +79,8 @@ $(document).ready(function() {
             this.panel.removeEventListener('click', close);
             $('.slideout-menu').removeClass('slideout-menu--fast');
         });
+});
+
+$(document).ready(function() {
+    $('.promo-tooltip').tooltip();
 });

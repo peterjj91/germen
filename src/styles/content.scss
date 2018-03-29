@@ -21,6 +21,10 @@
     @media(max-width: $screen-sm){
 
     }
+
+    &--thinner {
+      max-width: 1000px;
+    }
   }
 
   &--main {
