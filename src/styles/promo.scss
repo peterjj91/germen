@@ -756,4 +756,88 @@
       margin-top: 3px;
     }
   }
+
+  &__greate {
+    text-align: center;
+    padding: 55px 0px 0px 0px;
+    @media(max-width: $screen-md){
+      padding: 0px 15px 15px 15px;
+    }
+
+    &__logo {
+      margin-bottom: 37px;
+      @media(max-width: $screen-md){
+        margin-bottom: 31px;
+      }
+
+      img {
+
+      }
+    }
+
+    p {
+      font-size: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__social {
+      padding: 55px 0px 28px 0px;
+      @media(max-width: $screen-md){
+        padding-top: 87px;
+        padding-bottom: 24px;
+      }
+
+      &__icon {
+        margin-bottom: 18px;
+      }
+    }
+
+    &__description {
+      @media(max-width: $screen-md){
+      }
+
+      .head-h2 {
+        margin-bottom: 23px;
+        @media(max-width: $screen-md){
+          margin-bottom: 28px;
+        }
+      }
+    }
+
+    &__img {
+
+      &__row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__block {
+        border: 1px solid white;
+        position: relative;
+        flex: none;
+        overflow: hidden;
+        width: 114px;
+        height: 120px;
+        @media(max-width: $screen-md){
+
+        }
+      }
+
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
