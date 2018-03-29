@@ -1,0 +1,24 @@
+.modal-backdrop {
+  background-color: rgba(0,0,0,.6);
+
+  &.in {
+    opacity: 1;
+  }
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 900px;
+
+  @media(max-width: 768px){
+    margin: 0px auto;
+  }
+  @media(max-width: $screen-sm){
+    margin: 0;
+  }
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0px;
+}

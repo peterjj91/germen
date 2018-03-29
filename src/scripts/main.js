@@ -9,6 +9,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.promo-product').slick({
+        dots: true
+    });
+});
+
+$(document).ready(function() {
     $('#right-menu').sidr({
         name: 'sidr-right',
         side: 'right',

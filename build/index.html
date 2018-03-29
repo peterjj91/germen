@@ -72,7 +72,7 @@
         </div>
     </div>
 
-<div class="content">
+<div class="content content--main">
     <div class="promo-main">
         <div class="promo-main__img"></div>
 
@@ -701,50 +701,107 @@
     </div>
 </div>
 
-    <div class="footer">
-        <div class="footer__container">
-            <div class="promo-about">
-                <div class="head-h2 promo-about__title">О нас пишут</div>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="promo-about">
+                    <div class="head-h2 promo-about__title">О нас пишут</div>
 
-                <ul class="promo-about__nav">
-                    <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                    <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                    <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
-                    <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                    <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                    <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
-                </ul>
+                    <ul class="promo-about__nav">
+                        <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="promo-message">
+                    <div class="head-h2 promo-message__title">Можно сделать заказ через любой мессенджер</div>
+
+                    <ul class="promo-message__nav">
+                        <li>
+                            <a href="#">
+                                <svg class="promo-message__icon promo-message__icon--telegram">
+                                    <use xlink:href="icons/icons.svg#social-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="promo-message__icon promo-message__icon--wtsp">
+                                    <use xlink:href="icons/icons.svg#social-wtsp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="promo-message__icon promo-message__icon--fb">
+                                    <use xlink:href="icons/icons.svg#social-fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="promo-message">
-                <div class="head-h2 promo-message__title">Можно сделать заказ через любой мессенджер</div>
-
-                <ul class="promo-message__nav">
-                    <li>
-                        <a href="#">
-                            <svg class="promo-message__icon promo-message__icon--telegram">
-                                <use xlink:href="icons/icons.svg#social-telegram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="promo-message__icon promo-message__icon--wtsp">
-                                <use xlink:href="icons/icons.svg#social-wtsp"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="promo-message__icon promo-message__icon--fb">
-                                <use xlink:href="icons/icons.svg#social-fb"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        </div>
+    </main>
+    <div class="modal fade" id="product-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="popup-promo">
+                    <div class="popup-promo__header">
+                        <div class="logo"></div>
+    
+                        <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true"><span></span></div>
+                    </div>
+    
+                    <div class="popup-promo__slider">
+                        <div class="promo-product">
+                            <div class="promo-product__item">
+                                <div class="promo-product__img">
+                                    <img src="img/popup-img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="promo-product__item">
+                                <div class="promo-product__img">
+                                    <img src="img/popup-img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="promo-product__item">
+                                <div class="promo-product__img">
+                                    <img src="img/popup-img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="promo-product__item">
+                                <div class="promo-product__img">
+                                    <img src="img/popup-img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="promo-product__item">
+                                <div class="promo-product__img">
+                                    <img src="img/popup-img1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="popup-promo__content">
+                        <div class="popup-promo__description">
+                            <div class="popup-promo__title">
+                                Розовая нежность <strong class="popup-promo__price">2 990 <span class="rub">&#8381;</span></strong>
+                            </div>
+    
+                            <div class="popup-promo__delivery">Самая быстрая доставка — 60 мин</div>
+                        </div>
+    
+                        <div class="popup-promo__btn">
+                            <a href="#" class="btn btn__main">Заказать</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</main>
 </body>
 </html>
