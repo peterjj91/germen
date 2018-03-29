@@ -6970,32 +6970,34 @@ strong {
     @media (max-width: 1030px) {
       .popup-promo__greate__description .head-h2 {
         margin-bottom: 28px; } }
-  .popup-promo__greate__img__row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .popup-promo__greate__img__block {
-    border: 1px solid white;
-    position: relative;
-    -ms-flex: none;
-    flex: none;
-    overflow: hidden;
-    width: 114px;
-    height: 120px; }
-  .popup-promo__greate__img img {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    width: 100%; }
+  .popup-promo__greate__img {
+    border: 1px solid white; }
+    .popup-promo__greate__img__row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .popup-promo__greate__img__block {
+      border: 1px solid white;
+      position: relative;
+      -ms-flex: none;
+      flex: none;
+      overflow: hidden;
+      width: 114px;
+      height: 120px; }
+    .popup-promo__greate__img img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      min-height: 100%;
+      min-width: 100%;
+      width: 100%; }
 
 .content {
   padding-top: 126px;
