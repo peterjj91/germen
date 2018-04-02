@@ -5,7 +5,7 @@
 
         <div class="promo-article">
             <div class="promo-article__pic">
-                <img src="img/sub-img1.jpg" alt="">
+                <img src="img/sub-img1.png" alt="">
             </div>
 
             <div class="head-h2">Подписка на цветы</div>
@@ -15,8 +15,8 @@
             <ul class="promo-article__pluse">
                 <li>
                     <div class="promo-article__pluse__img">
-                        <svg class="promo-article__pluse__icon promo-article__pluse__icon--price">
-                            <use xlink:href="icons/icons.svg#price"></use>
+                        <svg class="promo-article__pluse__icon promo-article__pluse__icon--price ">
+                            <use xlink:href="icons/icons.svg#subscribe-badge"></use>
                         </svg>
                     </div>
 
@@ -29,7 +29,7 @@
                 <li>
                     <div class="promo-article__pluse__img">
                         <svg class="promo-article__pluse__icon promo-article__pluse__icon--flowers">
-                            <use xlink:href="icons/icons.svg#properties-flowers"></use>
+                            <use xlink:href="icons/icons.svg#subscribe-flower"></use>
                         </svg>
                     </div>
 
@@ -42,7 +42,7 @@
                 <li>
                     <div class="promo-article__pluse__img">
                         <svg class="promo-article__pluse__icon promo-article__pluse__icon--flowers2">
-                            <use xlink:href="icons/icons.svg#flower-2"></use>
+                            <use xlink:href="icons/icons.svg#subscribe-lotos"></use>
                         </svg>
                     </div>
 
@@ -87,19 +87,47 @@
 
             <ul class="promo-faq">
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq1">
+                            Как это работает?
+                        </button>
+
+                        <div id="faq1" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Выбираете стилистику букетов, привязываете карту и получаете свежий букет каждую неделю!</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq2">
+                            Сколько это стоит
+                        </button>
+
+                        <div id="faq2" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Все очень просто. 9 000 рублей при оплате за месяц или 23 000 рублей при оплате за 3 месяца (экономия 15%!).</p>
+
+                                <p>А если покупать букеты по отдельности, то стоимость будет 36 000 рублей, то есть экномия почти 40%</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
-                </li>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq3">
+                            А можно подарить подписку?
+                        </button>
 
-                <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                        <div id="faq3" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Да, конечно. Подарить один букет – это скучно и банально. Другое дело – подписка. Каждую неделю …</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>

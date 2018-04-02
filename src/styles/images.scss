@@ -1,3 +1,32 @@
+
+.icon {
+  display: inline-block;
+
+  &__afisha {
+    background: url("../img/afisha-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 116px;
+    height: 25px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      background: url("../img/afisha-logo@2x.png");
+    }
+  }
+
+  &__village {
+    background: url("../img/village-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 93px;
+    height: 34px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      background: url("../img/village-logo@2x.png");
+    }
+  }
+}
+
 .logo {
   width: 136px;
   height: 33px;
@@ -17,3 +46,4 @@
     background: url("../img/logo-2x.png");
   }
 }
+

@@ -1,4 +1,4 @@
-input, textarea {
+input, textarea, button {
   outline: none;
 }
 
@@ -31,18 +31,28 @@ input, textarea {
     color: rgba(151, 151, 151, 0.27);
   }
 
-  &--mark {
-    padding-right: 30px;
-    background: url(../img/mark.png);
-    background-position: center right 13px;
-    background-repeat: no-repeat;
-  }
+  &__wrapper {
+    position: relative;
 
-  &--mark-error {
-    padding-right: 30px;
-    background: url(../img/mark-red.png);
-    background-position: center right 13px;
-    background-repeat: no-repeat;
+    &--mark {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: 13px;
+        background-image: url(../img/mark.svg);
+        width: 12px;
+        height: 11px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .input {
+        padding-right: 30px;
+      }
+    }
   }
 }
 
@@ -57,6 +67,13 @@ input, textarea {
     font-size: 13px;
     @media(max-width: $screen-sm){
       width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      @media(max-width: $screen-sm){
+        margin-bottom: 0;
+      }
     }
 
     & + .styled-checkbox__block {
@@ -117,19 +134,33 @@ input, textarea {
   &:checked + label:after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 10px;
-    background: rgba(151, 151, 151, 0.41);
+    left: 6px;
+    top: 12px;
+    background: #22223C;
     width: 2px;
     height: 2px;
     box-shadow:
-            2px 0 0 rgba(151, 151, 151, 0.41),
-            4px 0 0 rgba(151, 151, 151, 0.41),
-            4px -2px 0 rgba(151, 151, 151, 0.41),
-            4px -4px 0 rgba(151, 151, 151, 0.41),
-            4px -6px 0 rgba(151, 151, 151, 0.41),
-            4px -8px 0 rgba(151, 151, 151, 0.41);
-    transform: rotate(45deg);
+            -4px 0 0 #22223C,
+            -2px 0 0 #22223C,
+            2px 0 0 #22223C,
+            4px 0 0 #22223C,
+            4px -2px 0 #22223C,
+            4px -4px 0 #22223C,
+            4px -6px 0 #22223C,
+            4px -8px 0 #22223C,
+            4px -10px 0 #22223C,
+            4px -12px 0 #22223C;
+    //transform: rotate(45deg);
+
+    transform: rotate(40deg);
+    //top: 3px;
+    //left: 3px;
+    //width: 16px;
+    //height: 16px;
+    //transform: none;
+    //box-shadow: none;
+    //background: rgba(34, 34, 60, 0.41);
+    //border-radius: 3px;
   }
 }
 

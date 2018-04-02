@@ -9,12 +9,20 @@
 .modal-dialog {
   width: 100%;
   max-width: 900px;
-
   @media(max-width: 768px){
     margin: 0px auto;
   }
   @media(max-width: $screen-sm){
     margin: 0;
+  }
+
+  &--mini {
+    max-width: 503px;
+    @media (max-width: $screen-md) {
+      max-width: 285px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 }
 

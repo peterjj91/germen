@@ -46,13 +46,13 @@
             <div class="header__logo">
                 <a href="#" class="logo"></a>
             </div>
-
-            <a href="#" class="header__phone">
+    
+            <a href="tel:+74953755565" class="header__phone">
                 <svg class="" width="26px" height="26px">
                     <use xlink:href="icons/icons.svg#phone"></use>
                 </svg>
             </a>
-
+    
             <div class="header__content">
                 <div class="header__nav" id="header-nav">
                     <ul class="nav">
@@ -64,9 +64,8 @@
                     </ul>
                 </div>
             </div>
-
+    
             <div class="header__burger">
-                <!--<a href="#right-menu" id="right-menu" class="mobile-menu"><span></span></a>-->
                 <span class="toggle-menu mobile-menu"><span></span></span>
             </div>
         </div>
@@ -77,7 +76,7 @@
 
         <div class="promo-article">
             <div class="promo-article__pic">
-                <img src="img/sub-img1.jpg" alt="">
+                <img src="img/sub-img1.png" alt="">
             </div>
 
             <div class="head-h2">Подписка на цветы</div>
@@ -87,8 +86,8 @@
             <ul class="promo-article__pluse">
                 <li>
                     <div class="promo-article__pluse__img">
-                        <svg class="promo-article__pluse__icon promo-article__pluse__icon--price">
-                            <use xlink:href="icons/icons.svg#price"></use>
+                        <svg class="promo-article__pluse__icon promo-article__pluse__icon--price ">
+                            <use xlink:href="icons/icons.svg#subscribe-badge"></use>
                         </svg>
                     </div>
 
@@ -101,7 +100,7 @@
                 <li>
                     <div class="promo-article__pluse__img">
                         <svg class="promo-article__pluse__icon promo-article__pluse__icon--flowers">
-                            <use xlink:href="icons/icons.svg#properties-flowers"></use>
+                            <use xlink:href="icons/icons.svg#subscribe-flower"></use>
                         </svg>
                     </div>
 
@@ -114,7 +113,7 @@
                 <li>
                     <div class="promo-article__pluse__img">
                         <svg class="promo-article__pluse__icon promo-article__pluse__icon--flowers2">
-                            <use xlink:href="icons/icons.svg#flower-2"></use>
+                            <use xlink:href="icons/icons.svg#subscribe-lotos"></use>
                         </svg>
                     </div>
 
@@ -159,19 +158,47 @@
 
             <ul class="promo-faq">
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq1">
+                            Как это работает?
+                        </button>
+
+                        <div id="faq1" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Выбираете стилистику букетов, привязываете карту и получаете свежий букет каждую неделю!</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq2">
+                            Сколько это стоит
+                        </button>
+
+                        <div id="faq2" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Все очень просто. 9 000 рублей при оплате за месяц или 23 000 рублей при оплате за 3 месяца (экономия 15%!).</p>
+
+                                <p>А если покупать букеты по отдельности, то стоимость будет 36 000 рублей, то есть экномия почти 40%</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
-                </li>
+                    <div class="promo-collapse">
+                        <button type="button" class="promo-collapse__btn" data-toggle="collapse" data-target="#faq3">
+                            А можно подарить подписку?
+                        </button>
 
-                <li>
-                    <a href="#" class="">Почему это лучше чем покупать каждую неделю</a>
+                        <div id="faq3" class="collapse">
+                            <div class="promo-collapse__text">
+                                <p>Да, конечно. Подарить один букет – это скучно и банально. Другое дело – подписка. Каждую неделю …</p>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -185,12 +212,23 @@
                     <div class="head-h2 promo-about__title">О нас пишут</div>
 
                     <ul class="promo-about__nav">
-                        <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                        <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                        <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
-                        <li><a href="#"><img src="img/about-afisha.png" class="promo-about__nav__img" alt=""></a></li>
-                        <li><a href="#"><img src="img/about-comers.png" class="promo-about__nav__img" alt=""></a></li>
-                        <li><a href="#"><img src="img/about-village.png" class="promo-about__nav__img" alt=""></a></li>
+                        <li>
+                            <a href="#">
+                                <span class="icon icon__afisha"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="promo-about__nav__img" height="33px">
+                                    <use xlink:href="icons/icons.svg#promo-about-commerc"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon icon__village"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -278,6 +316,38 @@
                         <div class="popup-promo__btn">
                             <a href="#" class="btn btn__main">Заказать</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="popup-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--mini">
+            <div class="modal-content">
+                <div class="popup-promo popup-promo--login">
+                    <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true">
+                            <span></span>
+                        </div>
+    
+                    <div class="popup-promo__content">
+                        <p class="popup-promo__text">Скажите куда вы доставить цветы, мы покажем ближайшее время доставки каждого букета</p>
+    
+                        <ul class="modal-login">
+                            <li>
+                                <a href="#" class="btn btn__main">Внутри садового</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn__main">От садового до ТТК</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn__main">От ТТК до МКАД</a>
+                            </li>
+                        </ul>
+    
+                        <p class="popup-promo__text popup-promo__text--mini">Доставка за МКАД :(</p>
+    
+                        <a href="#" class="btn btn__promo">Не хочу выбирать</a>
                     </div>
                 </div>
             </div>

@@ -1,171 +1,224 @@
-//= _header.html
+//= _head.html
+//= _mobile-menu.html
 
-<div class="content">
-    <div class="content__container content__container--thinner">
+<main id="panel-body">
+    //= _header-main.html
 
-        <div class="promo-order">
-            <div class="head-h2 promo-order__title">Оформление заказа</div>
+    <div class="content">
+        <div class="content__container content__container--thinner">
 
-            <div class="promo-order__item">
-                <div class="promo-order__item__img">
-                    <img src="img/order-img1.jpg" alt="">
-                </div>
+            <div class="promo-order">
+                <div class="head-h2 promo-order__title">Оформление заказа</div>
 
-                <div class="promo-order__item__description">
-                    <p class="promo-order__item__title">Букет розовая нежность</p>
+                <div class="promo-order__item">
+                    <div class="promo-order__item__inside">
+                        <div class="promo-order__item__img">
+                            <a href="#">
+                                <img src="img/order-img1.jpg" alt="">
+                            </a>
+                        </div>
 
-                    <p class="text--light promo-order__item__delivery">Доставка бесплатно</p>
+                        <div class="promo-order__item__description">
+                            <p class="promo-order__item__title">Букет розовая нежность</p>
 
-                    <div class="promo-order__item__price">2 990 <span class="rub">&#8381;</span></div>
-                </div>
-            </div>
+                            <div class="promo-order__item__description__text">
+                                <p class="text--light promo-order__item__delivery">Доставка бесплатно</p>
 
-            <div class="promo-order__map">
-                <div class="head-h3 promo-order__map__title">Адрес доставки</div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.60400156867!2d23.703319926703124!3d37.99083200835683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2z0JDRhNC40L3Riywg0JPRgNC10YbQuNGP!5e0!3m2!1sru!2sua!4v1522326520225" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-            <div class="promo-order__address">
-                <div class="promo-order__row">
-                    <div class="promo-order__block">
-                        <input type="text" class="input input--mark" placeholder="Улица и дом">
-                    </div>
-
-                    <div class="promo-order__block">
-                        <input type="text" class="input" placeholder="Офис, квартира ">
-                    </div>
-
-                    <div class="promo-order__block promo-order__block--full">
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
-                            <label for="styled-checkbox-1">Я не знаю адрес доставки</label>
-
-                            <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
-                                <svg class="" width="23px" height="23px">
-                                    <use xlink:href="icons/icons.svg#question"></use>
-                                </svg>
-                            </span>
+                                <div class="promo-order__item__price">2 990 <span class="rub">₽</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="promo-order__delivery">
-                <div class="promo-order__delivery__block">
-                    <div class="head-h3 promo-order__delivery__title">Когда доставить</div>
+                <div class="promo-order__map">
+                    <div class="head-h3 promo-order__map__title">Адрес доставки</div>
+
+                    <div class="promo-order__address">
+                        <div class="promo-order__row">
+                            <div class="promo-order__block">
+                                <div class="input__wrapper input__wrapper--mark">
+                                    <input type="text" class="input" placeholder="Улица и дом">
+                                </div>
+                            </div>
+
+                            <div class="promo-order__block">
+                                <div class="input__wrapper">
+                                    <input type="text" class="input" placeholder="Офис, квартира ">
+                                </div>
+                            </div>
+
+                            <div class="promo-order__block promo-order__block--full">
+                                <div class="styled-checkbox__block">
+                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                    <label for="styled-checkbox-1">Я не знаю адрес доставки</label>
+
+                                    <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
+                                    <svg class="" width="23px" height="23px">
+                                        <use xlink:href="icons/icons.svg#question"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.60400156867!2d23.703319926703124!3d37.99083200835683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2z0JDRhNC40L3Riywg0JPRgNC10YbQuNGP!5e0!3m2!1sru!2sua!4v1522326520225" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="promo-order__delivery">
+                    <div class="promo-order__delivery__block">
+                        <div class="head-h3 promo-order__delivery__title">Когда доставить</div>
+
+                        <div class="promo-order__row">
+                            <div class="promo-order__block">
+                                <select class="selectpicker">
+                                    <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
+                                    <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
+                                    <option value="">lorem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-order__delivery__block">
+                        <div class="head-h3 promo-order__delivery__title">Ваш телефон</div>
+
+                        <div class="promo-order__row">
+                            <div class="promo-order__block">
+                                <div class="input__wrapper">
+                                    <input type="text" class="input" placeholder="+7">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="promo-order__delivery__checkbox">
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                                <label for="styled-checkbox-2">Не звонить для подтверждения</label>
+                            </div>
+
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                                <label for="styled-checkbox-3">Отправить фотографии букета перед доставкой</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="promo-order__social">
+                    <li>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_telegram" type="checkbox" value="value1">
+
+                            <label for="add_telegram" class="">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-telegram"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Телеграм</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_wtsp" type="checkbox" value="value1">
+
+                            <label for="add_wtsp">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-wtsp"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Вотсап</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_fb" type="checkbox" value="value1">
+
+                            <label for="add_fb">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-fb"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Мессенджер</span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="promo-order__recipient">
+                    <div class="head-h3">Данные получателя</div>
 
                     <div class="promo-order__row">
                         <div class="promo-order__block">
-                            <select class="selectpicker">
-                                <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
-                                <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
-                                <option value="">lorem</option>
-                            </select>
+                            <div class="input__wrapper input__wrapper--mark">
+                                <input type="text" class="input" placeholder="+7">
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="promo-order__delivery__block">
-                    <div class="head-h3 promo-order__delivery__title">Ваш телефон</div>
-
-                    <div class="promo-order__row">
                         <div class="promo-order__block">
-                            <input type="text" class="input input--mark" placeholder="+7">
-                        </div>
-                    </div>
-
-                    <div class="promo-order__delivery__checkbox">
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
-                            <label for="styled-checkbox-2">Не звонить для подтверждения</label>
+                            <div class="input__wrapper input__wrapper--mark">
+                                <input type="text" class="input" placeholder="Имя">
+                            </div>
                         </div>
 
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
-                            <label for="styled-checkbox-3">Отправить фотографии букета перед доставкой</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="promo-order__block promo-order__block--full">
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value1">
+                                <label for="styled-checkbox-10">Это сюрприз</label>
 
-            <ul class="promo-order__social">
-                <li>
-                    <a href="#" class="btn btn__promo promo-order__social__btn">
-                        <svg class="promo-order__social__icon">
-                            <use xlink:href="icons/icons.svg#social-telegram"></use>
-                        </svg>
+                                <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
+                                    <svg class="" width="23px" height="23px">
+                                        <use xlink:href="icons/icons.svg#question"></use>
+                                    </svg>
+                                </span>
+                            </div>
 
-                        <span class="promo-order__social__text">Телеграм</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn__promo promo-order__social__btn">
-                        <svg class="promo-order__social__icon">
-                            <use xlink:href="icons/icons.svg#social-wtsp"></use>
-                        </svg>
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="add_vase" type="checkbox" value="value1">
+                                <label for="add_vase">Добавить вазу</label>
+                            </div>
 
-                        <span class="promo-order__social__text">Вотсап</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn__promo promo-order__social__btn">
-                        <svg class="promo-order__social__icon">
-                            <use xlink:href="icons/icons.svg#social-fb"></use>
-                        </svg>
-
-                        <span class="promo-order__social__text">Мессенджер</span>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="promo-order__recipient">
-                <div class="head-h3">Данные получателя</div>
-
-                <div class="promo-order__row">
-                    <div class="promo-order__block">
-                        <input type="text" class="input input--mark" placeholder="+7">
-                    </div>
-
-                    <div class="promo-order__block">
-                        <input type="text" class="input" placeholder="Имя">
-                    </div>
-
-                    <div class="promo-order__block promo-order__block--full">
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value1">
-                            <label for="styled-checkbox-10">Это сюрприз</label>
-
-                            <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
-                                <svg class="" width="23px" height="23px">
-                                    <use xlink:href="icons/icons.svg#question"></use>
-                                </svg>
-                            </span>
-                        </div>
-
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value1">
-                            <label for="styled-checkbox-11">Добавить вазу</label>
-                        </div>
-
-                        <div class="styled-checkbox__block">
-                            <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox" value="value1">
-                            <label for="styled-checkbox-12">Добавить записку</label>
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="add_comment" type="checkbox" value="value1">
+                                <label for="add_comment">Добавить записку</label>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="promo-order__optional">
+                    <div class="promo-order__item">
+                        <div class="promo-order__item__img">
+                            <a href="#">
+                                <img src="img/promo-item2.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="promo-order__item__description">
+                            <p class="promo-order__item__title">Букет розовая нежность</p>
+
+                            <div class="promo-order__item__description__text">
+                                <div class="promo-order__item__price">+2 990 <span class="rub">₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-order__comment">
+                    <textarea class="textarea">Комментарий к заказу</textarea>
+                </div>
+
+                <div class="promo-order__submit">
+                    <a href="#" class="btn btn__main">Оплатить 2 990 руб</a>
+                </div>
             </div>
 
-            <div class="promo-order__comment">
-                <textarea class="textarea">Комментарий к заказу</textarea>
-            </div>
-
-            <div class="promo-order__submit">
-                <a href="#" class="btn btn__main">Оплатить 2 990 руб</a>
-            </div>
         </div>
-
     </div>
-</div>
+</main>
 
-//= _footer.html
+//= _modal.html
+</body>
+</html>

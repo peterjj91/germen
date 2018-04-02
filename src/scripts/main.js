@@ -84,3 +84,23 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.promo-tooltip').tooltip();
 });
+
+$(document).ready(function() {
+    $('#add_vase').change(function(){
+        if($(this).is(":checked")) {
+            $('.promo-order__optional').addClass("promo-order__optional--active");
+        } else {
+            $('.promo-order__optional').removeClass("promo-order__optional--active");
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#add_comment').change(function(){
+        if($(this).is(":checked")) {
+            $('.promo-order__comment').addClass("promo-order__comment--active");
+        } else {
+            $('.promo-order__comment').removeClass("promo-order__comment--active");
+        }
+    });
+});
