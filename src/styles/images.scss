@@ -37,12 +37,10 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   @media(max-width: $screen-sm){
-    width: 88px;
+    width: 90px;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
-    width: 90px;
-    height: 33px;
     background: url("../img/logo-2x.png");
   }
 }

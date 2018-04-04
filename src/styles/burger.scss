@@ -36,7 +36,8 @@
   }
 
   span {
-    background-color: rgba(34, 34, 60, 0.68);
+    //background-color: rgba(34, 34, 60, 0.68);
+    background-color: rgb(34, 34, 60);
     height: 4px;
     display: block;
     width: 26px;
@@ -57,7 +58,8 @@
       left: 0;
       margin: auto;
       border-radius: 1px;
-      background-color: rgba(34, 34, 60, 0.68);
+      //background-color: rgba(34, 34, 60, 0.68);
+      background-color: rgb(34, 34, 60);
 
       @media(max-width: $screen-md){
         width: 26px;
