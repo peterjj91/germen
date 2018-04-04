@@ -7053,7 +7053,7 @@ input, textarea, button {
         width: 100%;
         padding: 8px 8px 6px 8px; } }
     .promo-item__delivery:hover .promo-item__delivery__time__text, .promo-item__delivery:focus .promo-item__delivery__time__text {
-      color: white; }
+      color: grey; }
     .promo-item__delivery__text {
       float: left;
       color: white;
@@ -7079,7 +7079,8 @@ input, textarea, button {
           float: none; } }
       .promo-item__delivery__time__text {
         display: inline-block;
-        vertical-align: top; }
+        vertical-align: top;
+        color: grey; }
     .promo-item__delivery__icon {
       display: inline-block;
       vertical-align: top;
