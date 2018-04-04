@@ -231,7 +231,11 @@
   }
 
   &__title {
+    color: #000;
 
+    &:hover, &:focus {
+      color: #000;
+    }
   }
 
   &__price {
@@ -254,11 +258,11 @@
       padding: 8px 8px 6px 8px;
     }
 
-    &:hover {
+    &:hover, &:focus {
       .promo-item {
         &__delivery {
           &__text {
-            //color: #000;
+
           }
 
           &__time {
@@ -273,7 +277,7 @@
     &__text {
       float: left;
       color: white;
-      font-family: $museosans-black;
+      font-family: $museosans-bold;
       @media (max-width: $screen-sm) {
         display: table-cell;
         vertical-align: top;
@@ -310,8 +314,8 @@
       vertical-align: top;
       width: 24px;
       height: 16px;
-      stroke: white;
-      fill: transparent;
+      //stroke: white;
+      //fill: transparent;
       margin-right: 4px;
     }
   }

@@ -7031,6 +7031,10 @@ input, textarea, button {
     @media (max-width: 700px) {
       .promo-item__description {
         padding-top: 8px; } }
+  .promo-item__title {
+    color: #000; }
+    .promo-item__title:hover, .promo-item__title:focus {
+      color: #000; }
   .promo-item__price {
     font-family: "MuseoSansBold"; }
   .promo-item__delivery {
@@ -7048,12 +7052,12 @@ input, textarea, button {
         display: table;
         width: 100%;
         padding: 8px 8px 6px 8px; } }
-    .promo-item__delivery:hover .promo-item__delivery__time__text {
+    .promo-item__delivery:hover .promo-item__delivery__time__text, .promo-item__delivery:focus .promo-item__delivery__time__text {
       color: white; }
     .promo-item__delivery__text {
       float: left;
       color: white;
-      font-family: "MuseoSansBlack"; }
+      font-family: "MuseoSansBold"; }
       @media (max-width: 700px) {
         .promo-item__delivery__text {
           display: table-cell;
@@ -7081,8 +7085,6 @@ input, textarea, button {
       vertical-align: top;
       width: 24px;
       height: 16px;
-      stroke: white;
-      fill: transparent;
       margin-right: 4px; }
 
 .promo-review {
