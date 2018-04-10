@@ -20,7 +20,6 @@
     background-size: cover !important;
     background-position: center !important;
     z-index: -1;
-    background: url("../img/promo-img1.jpg");
 
     @media (max-width: $screen-sm) {
       //background: url("../img/promo-item1-mob.jpg");
@@ -141,7 +140,7 @@
   }
 
   &__block {
-    @include make-xs-column(24);
+    @include make-xs-column(12);
     @include make-sm-column(12);
     @include make-md-column(6);
     float: none !important;
@@ -152,6 +151,9 @@
       padding-left: 7px;
       padding-right: 7px;
       margin-bottom: 40px;
+    }
+    @media(max-width: 370px){
+      width: 100%;
     }
 
     &__wrapper {
@@ -216,6 +218,7 @@
       left: 50%;
       min-width: 100%;
       min-height: 100%;
+      max-width: 120%;
       @media (max-width: $screen-sm) {
         //height: 100%;
       }
@@ -703,6 +706,7 @@
 
   &__slider {
     height: 520px;
+    background-color: #CECECE;
     @media(max-width: $screen-md){
       height: 530px;
     }
@@ -959,6 +963,10 @@
 }
 
 .promo-article {
+  @media(max-width: $screen-sm){
+    padding-top: 40px;
+  }
+
   &__pic {
     width: 100%;
     margin-bottom: 50px;
@@ -981,32 +989,59 @@
   }
 
   &__slider {
-    //height: 416px;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+}
+
+.promo-subscribe {
+  &__description {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 68px;
+
+    .head-h2 {
+      margin-bottom: 18px;
+    }
   }
 
   &__pluse {
     padding: 0;
     list-style: none;
-    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 72px;
+    @media(max-width: $screen-sm){
+      display: block;
+    }
 
     &__img {
-      width: 62px;
-      float: left;
+      width: 100%;
+      display: table;
+      height: 45px;
+      text-align: center;
+      margin-bottom: 11px;
+
+      &__cell {
+        display: table-cell;
+        vertical-align: middle;
+      }
     }
 
     &__description {
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
       line-height: normal;
-      padding-left: 62px;
 
       p {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
     }
 
     li {
-      width: 100%;
+      flex: 1;
       margin-bottom: 50px;
 
       &:last-child {
@@ -1031,13 +1066,90 @@
       }
     }
   }
+
+  &__month {
+    padding: 40px 55px 100px 55px;
+    display: block;
+    position: relative;
+    width: 100%;
+    @media(max-width: $screen-md){
+      padding: 20px 20px 80px 20px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 0px -15px;
+
+      @media(max-width: $screen-md){
+        display: block;
+      }
+    }
+
+    &__block {
+      display: flex;
+      flex: 1;
+      padding: 0px 15px;
+      @media(max-width: $screen-md){
+        margin-bottom: 40px;
+      }
+    }
+
+    .head-h2 {
+      margin-bottom: 9px;
+      color: white;
+    }
+
+    p {
+      margin-bottom: 33px;
+      color: white;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: 56px;
+      left: 0;
+      width: 100%;
+      padding: 0px 55px;
+      @media(max-width: $screen-md){
+        bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      border-radius: 0px;
+      padding: 11px 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__money {
+    margin-bottom: 90px;
+  }
+
+  &__faq {
+    .promo-faq {
+      margin-top: 47px;
+    }
+  }
 }
 
 .promo-faq {
+  @include make-row;
+  position: relative;
   padding: 0;
   list-style: none;
+  font-size: 0;
 
   li {
+    @include make-xs-column(24);
+    @include make-md-column(8);
+    float: none !important;
+    display: inline-block;
+    vertical-align: top;
     margin-bottom: 30px;
 
     &:last-child {
@@ -1057,17 +1169,19 @@
 }
 
 .promo-collapse {
-  font-size: 16px;
+  font-size: 15px;
 
   &__btn {
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
     border: none;
     padding: 0;
+    font-family: $museosans-bold;
+    margin-bottom: 5px;
   }
 
   &__text {
-    padding-top: 20px;
+    line-height: normal;
 
     p {
       @media(max-width: $screen-sm){
