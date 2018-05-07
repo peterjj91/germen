@@ -11,69 +11,18 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<nav id="menu-body" class="promo-menu">
-    <style>
-        .promo-menu {
-            display: none;
-        }
-    </style>
-    <div class="promo-menu__burger">
-        <span class="toggle-menu mobile-menu mobile-menu--white active"><span></span></span>
-    </div>
-
-    <ul class="promo-menu__nav">
-        <li><a href="#">Букеты</a></li>
-        <li><a href="#">Экспресс-доставка</a></li>
-        <li><a href="#">Подписка</a></li>
-        <li><a href="#">Доставка</a></li>
-    </ul>
-
-    <ul class="promo-menu__info">
-        <li><a href="#">Оплата</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
-        <li><a href="#">Обработка персональных данных</a></li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-
-    <div class="promo-menu__post">
-        <p>©2018 Germen. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
-    </div>
-</nav>
 
 <main id="panel-body">
-    <div class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="#" class="logo"></a>
-            </div>
-    
-            <a href="tel:+74953755565" class="header__phone">
-                <svg class="" width="26px" height="26px">
-                    <use xlink:href="icons/icons.svg#phone"></use>
-                </svg>
-            </a>
-    
-            <div class="header__content">
-                <div class="header__nav" id="header-nav">
-                    <ul class="nav">
-                        <li><a href="#">Букеты</a></li>
-                        <li><a href="#">Подписка</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="tel:+74953755565"> +7 (495) 375-55-65</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="header__burger">
-                <span class="toggle-menu mobile-menu"><span></span></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="content content--background">
+    <div class="content content--order">
         <div class="content__container content__container--thinner">
 
             <div class="promo-order">
+                <div class="promo-order__header">
+                    <div class="promo-order__logo">
+                        <a href="#" class="logo"></a>
+                    </div>
+                </div>
+
                 <div class="head-h2 promo-order__title">Оформление заказа</div>
 
                 <div class="promo-order__item">
@@ -90,7 +39,7 @@
                             <div class="promo-order__item__description__text">
                                 <p class="text--light promo-order__item__delivery">Доставка бесплатно</p>
 
-                                <div class="promo-order__item__price">2 990 <span class="rub">₽</span></div>
+                                <div class="promo-order__item__price">2 990 <span class="rouble"></span></div>
                             </div>
                         </div>
                     </div>
@@ -118,11 +67,11 @@
                                     <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
                                     <label for="styled-checkbox-1">Я не знаю адрес доставки</label>
 
-                                    <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
-                                <svg class="" width="23px" height="23px">
-                                    <use xlink:href="icons/icons.svg#question"></use>
-                                </svg>
-                            </span>
+                                    <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Бифуркация русла обедняет основной апатит">
+                                        <svg class="" width="23px" height="23px">
+                                            <use xlink:href="icons/icons.svg#question"></use>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +85,7 @@
                         <div class="head-h3 promo-order__delivery__title">Когда доставить</div>
 
                         <div class="promo-order__row">
-                            <div class="promo-order__block">
+                            <div class="promo-order__block promo-order__block--full">
                                 <select class="selectpicker">
                                     <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
                                     <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
@@ -164,14 +113,14 @@
                             </div>
 
                             <div class="styled-checkbox__block">
-                                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
-                                <label for="styled-checkbox-3">Отправить фотографии букета перед доставкой</label>
+                                <input class="styled-checkbox" id="revify-phone" type="checkbox" value="value1">
+                                <label for="revify-phone">Отправить фотографии букета перед доставкой</label>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <ul class="promo-order__social">
+                <ul class="promo-order__social hidden">
                     <li>
                         <div class="promo-order__social__btn styled-checkbox__block">
                             <input class="styled-checkbox" id="add_telegram" type="checkbox" value="value1">
@@ -235,10 +184,10 @@
                                 <label for="styled-checkbox-10">Это сюрприз</label>
 
                                 <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
-                                <svg class="" width="23px" height="23px">
-                                    <use xlink:href="icons/icons.svg#question"></use>
-                                </svg>
-                            </span>
+                                    <svg class="" width="23px" height="23px">
+                                        <use xlink:href="icons/icons.svg#question"></use>
+                                    </svg>
+                                </span>
                             </div>
 
                             <div class="styled-checkbox__block">
@@ -249,6 +198,13 @@
                             <div class="styled-checkbox__block">
                                 <input class="styled-checkbox" id="add_comment" type="checkbox" value="value1">
                                 <label for="add_comment">Добавить записку</label>
+                            </div>
+                        </div>
+
+                        <div class="promo-order__block promo-order__block--full hidden" id="write_comment">
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="check_comment" type="checkbox" value="value8">
+                                <label for="check_comment">Придумайте вместо меня!</label>
                             </div>
                         </div>
                     </div>
@@ -266,18 +222,22 @@
                             <p class="promo-order__item__title">Букет розовая нежность</p>
 
                             <div class="promo-order__item__description__text">
-                                <div class="promo-order__item__price">+2 990 <span class="rub">₽</span></div>
+                                <div class="promo-order__item__price">+2 990 <span class="rouble"></span></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="promo-order__comment hidden" id="write_note">
+                    <textarea class="textarea" placeholder="Текст записки"></textarea>
+                </div>
+
                 <div class="promo-order__comment">
-                    <textarea class="textarea">Комментарий к заказу</textarea>
+                    <textarea class="textarea" placeholder="Комментарий к заказу" maxlength="400"></textarea>
                 </div>
 
                 <div class="promo-order__submit">
-                    <a href="#" class="btn btn__main">Оплатить 2 990 руб</a>
+                    <a href="#" class="btn btn__main">Оплатить 2 990 <span class="rouble"></span></a>
                 </div>
             </div>
 
@@ -330,7 +290,7 @@
                 <div class="popup-promo__content">
                     <div class="popup-promo__description">
                         <div class="popup-promo__title">
-                            Розовая нежность <strong class="popup-promo__price">2 990 <span class="rub">&#8381;</span></strong>
+                            Розовая нежность <strong class="popup-promo__price">2 990 <span class="rouble"></span></strong>
                         </div>
 
                         <div class="popup-promo__delivery">Самая быстрая доставка — 60 мин</div>

@@ -28618,20 +28618,19 @@ $(document).ready(function() {
         'panel': document.getElementById('panel-body'),
         'menu': document.getElementById('menu-body'),
         'padding': 294,
-        'tolerance': 70,
-        'easing': 'cubic-bezier(.32,2,.55,.27)',
+        'tolerance': 0,
+        'easing': false,
         'side' : 'right'
     });
 
     $('.toggle-menu').click(function () {
-        slideout.toggle();
-        // slideout.open();
+        slideout.open();
     });
 
-
-    // document.querySelector('.toggle-menu').addEventListener('click', function() {
-    //     slideout.open();
-    // });
+    $('.toggle-menu--inside').click(function () {
+        $('.slideout-open').removeClass('slideout-open');
+        slideout.close();
+    });
 
     function close(eve) {
         eve.preventDefault();
@@ -28647,14 +28646,22 @@ $(document).ready(function() {
         })
         .on('beforeclose', function() {
             this.panel.classList.remove('panel-open');
-            $('.slideout-menu').addClass('slideout-menu--fast');
             this.panel.removeEventListener('click', close);
-            $('.slideout-menu').removeClass('slideout-menu--fast');
         });
 });
 
 $(document).ready(function() {
     $('.promo-tooltip').tooltip();
+});
+
+$(document).ready(function() {
+    $('#revify-phone').change(function(){
+        if($(this).is(":checked")) {
+            $('.promo-order__social').removeClass("hidden");
+        } else {
+            $('.promo-order__social').addClass("hidden");
+        }
+    });
 });
 
 $(document).ready(function() {
@@ -28670,9 +28677,19 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#add_comment').change(function(){
         if($(this).is(":checked")) {
-            $('.promo-order__comment').addClass("promo-order__comment--active");
+            $('#write_comment').removeClass("hidden");
         } else {
-            $('.promo-order__comment').removeClass("promo-order__comment--active");
+            $('#write_comment').addClass("hidden");
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#check_comment').change(function(){
+        if($(this).is(":checked")) {
+            $('#write_note').removeClass("hidden");
+        } else {
+            $('#write_note').addClass("hidden");
         }
     });
 });

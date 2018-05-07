@@ -4,20 +4,13 @@
   bottom: 0;
   width: 294px;
   min-height: 100vh;
-  //overflow-y: scroll;
-  //-webkit-overflow-scrolling: touch;
-  //z-index: 0;
-  //display: none;
   background: #333333;
-
 
   display: block !important;
   height: 100%;
-  right: -294px; /*was originally t right when the nav bar was on the right side*/
   z-index: 100;
-  text-align: center;
   transition: right 0.1s; /** default on the right **/
-  overflow-y: auto; /* makes the expanding nav scrollable */
+  overflow-y: hidden; /* makes the expanding nav scrollable */
 }
 
 .slideout-menu-left {
@@ -26,7 +19,6 @@
 
 .slideout-menu-right {
   right: -294px;
-  //right: 0;
 }
 
 .slideout-panel {

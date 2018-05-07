@@ -52,4 +52,8 @@
   font-family: 'rouble';
   font-weight: normal;
   font-style: normal;
+
+  &:before {
+    content: "o";
+  }
 }
